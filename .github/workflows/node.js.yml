@@ -3,7 +3,11 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # или ваша основная ветка
+      - main  # Ваша основная ветка
+
+permissions:
+  contents: write  # Разрешение на запись
+  pages: write     # Разрешение на деплой GitHub Pages
 
 jobs:
   build:
@@ -11,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]  
+        node-version: [18.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -23,8 +27,8 @@ jobs:
       - run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages  # The branch the action should deploy to.
-          folder: dist      # The folder the action should deploy.
-          token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Используем секретный токен
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Используем GITHUB_TOKEN для аутентификации
+          publish_branch: gh-pages  # Ветка для деплоя
+          publish_dir: ./dist       # Папка для деплоя (выходная папка после сборки)

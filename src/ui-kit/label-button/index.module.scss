@@ -1,0 +1,14 @@
+@import 'src/styles/variables';
+
+.Label-button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    border: 2px solid $color-white;
+    border-radius: 24px;
+    background-color: $color-black;
+
+    &__label {
+        color: $color-light-purple
+    }
+}

@@ -1,17 +1,33 @@
 import { memo } from 'react';
-import './styles.scss';
+import { BrowserLink } from '../../ui-kit/browser-link';
+import classnames from 'classnames/bind';
+import styles from './index.module.scss';
+
+const cn = classnames.bind(styles);
+
+const BLOCK_NAME = 'Header';
 
 export const Header = memo(
   function Header() {
-    return (<header className="header">
-      <div className="header-logo">Acceleracio ✨</div>
-      <nav className="header-nav">
-        <ul className="header-ul">
-          <li><a className="header-link" href="#">О курсе</a></li>
-          <li><a className="header-link" href="#">Преподаватели</a></li>
-          <li><a className="header-link" href="#">Программа</a></li>
-          <li><a className="header-link" href="#">О нас</a></li>
-          <li><a className="header-link" href="#">Отзывы</a></li>
+    return (<header className={cn(BLOCK_NAME)} >
+      <div className={cn(`${BLOCK_NAME}__logo`)}>Acceleracio ✨</div>
+      <nav className={cn(`${BLOCK_NAME}__nav`)}>
+        <ul className={cn(`${BLOCK_NAME}__ul`)}>
+          <li>
+            <BrowserLink routeName="#" text="О курсе" />
+          </li>
+          <li>
+            <BrowserLink routeName="#" text="Преподаватели" />
+          </li>
+          <li>
+            <BrowserLink routeName="#" text="Программа" />
+          </li>
+          <li>
+            <BrowserLink routeName="#" text="О нас" />
+          </li>
+          <li>
+            <BrowserLink routeName="#" text="Отзывы" />
+          </li>
         </ul>
       </nav>
     </header>);

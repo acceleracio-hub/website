@@ -1,25 +1,33 @@
 import { memo } from 'react';
-import './styles.scss';
+import classnames from 'classnames/bind';
 import girl from '../../assets/main-girl.png';
+import { SecondaryButton } from '../../ui-kit/secondary-button';
+import { LabelButton } from '../../ui-kit/label-button';
+import { PrimaryButton } from '../../ui-kit/primary-button';
+import { Text } from '../../ui-kit/text';
+import styles from './index.module.scss';
+
+const cn = classnames.bind(styles);
+
+const BLOCK_NAME = 'Course-info';
 
 export const CourseInfo = memo(
   function CourseInfo() {
     return (
-      <section className="course">
-        <div className="course-info">
-          <button className="course-button">Старт потока <span className="course-label">6 октября</span></button>
-          <button className="course-button">Длительность <span className="course-label">2 месяца</span></button>
-          <button className="course-button"> <span className="course-label">Онлайн</span></button>
+      <section className={cn(BLOCK_NAME)}>
+        <div className={cn(`${BLOCK_NAME}__wrapper`)}>
+          <LabelButton text="Старт потока" label="6&nbsp;октября" />
+          <LabelButton text="Длительность" label="2&nbsp;месяца" />
+          <SecondaryButton text="Онлайн" />
         </div>
-        <h1 className="course-header">Подготовка к&nbsp;собеседованию на&nbsp;английском</h1>
-        <div className="course-description">
-          <div className="course-description-section">
-            <p className="course-paragraph">
-              Станьте самым желанным кандидатом на&nbsp;собеседованиях в компаниях Европы и&nbsp;Америки  — от&nbsp;самопрезентации до оффера.
-            </p>
-            <button className="course-cta-button">Записаться на курс</button>
+        <div className={cn(`${BLOCK_NAME}__banner`)}>
+          <div className={cn(`${BLOCK_NAME}__banner-text`)}>
+            <Text size='h1' text="Подготовка к&nbsp;собеседованию на&nbsp;английском" />
+            <Text size='p' text="Станьте самым желанным кандидатом на&nbsp;собеседованиях в компаниях Европы и&nbsp;Америки  — от&nbsp;самопрезентации до оффера." />
+            <PrimaryButton text="Записаться на курс" />
           </div>
-          <img className="course-img" alt="Девочка смотрит в лупу" src={girl} />
+
+          <img className={cn(`${BLOCK_NAME}__banner-img`)} alt="Девочка смотрит в лупу" src={girl} />
         </div>
       </section>
     );

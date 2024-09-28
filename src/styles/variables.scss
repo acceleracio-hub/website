@@ -1,0 +1,11 @@
+$color-white: #f8f8f8;
+$color-black: #242424;
+$color-light-purple: #bdacff;
+$color-purple: #646cff;
+
+// max-width: 768px
+$max-tablet-width: 768px;
+$max-mobile-width: 480px;
+
+$tablet: "(max-width: #{$max-tablet-width})";
+$mobile: "(max-width: #{$max-mobile-width})";

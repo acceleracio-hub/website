@@ -1,0 +1,199 @@
+@import 'src/styles/variables';
+
+.Text {
+    margin: 0;
+    text-decoration: inherit;
+    text-transform: none;
+    word-wrap: break-word;
+
+    // Размер
+    &--h1 {
+        text-align: start;
+        font-size: 4rem; // 65px (примерно)
+        line-height: 0.95;
+        font-weight: 600;
+    }
+
+    &--h2 {
+        font-size: 2.5rem; // 40px (примерно)
+        line-height: 1.3;
+        font-weight: 600;
+    }
+
+    &--h3 {
+        font-size: 2rem; // 32px (примерно)
+        line-height: 1.25;
+        font-weight: 500;
+    }
+
+    &--h4 {
+        font-size: 1.625rem; // 26px (примерно)
+        line-height: 1.2;
+        font-weight: 400;
+    }
+
+    &--h5 {
+        font-size: 1.375rem; // 22px (примерно)
+        line-height: 1.3;
+        font-weight: 400;
+    }
+
+    &--h6 {
+        font-size: 1.125rem; // 18px (примерно)
+        line-height: 1.4;
+        font-weight: 400;
+    }
+
+    &--p {
+        text-align: start;
+        font-size: 1.25rem; // 20px (примерно)
+        line-height: 1.25;
+        font-weight: 400;
+    }
+
+    // Цвет
+    &--white {
+        color: $color-white;
+    }
+
+    &--black {
+        color: $color-black;
+    }
+
+    &--light-purple {
+        color: $color-light-purple;
+    }
+
+    &--purple {
+        color: $color-purple;
+    }
+
+    &--white-space {
+        &-normal {
+            white-space: normal;
+        }
+
+        &-nowrap {
+            white-space: nowrap;
+        }
+
+        &-pre {
+            white-space: pre;
+        }
+
+        &-pre-wrap {
+            white-space: pre-wrap;
+        }
+
+        &-pre-line {
+            white-space: pre-line;
+        }
+
+        &-break-spaces {
+            white-space: break-spaces;
+        }
+
+        &-inherit {
+            white-space: inherit;
+        }
+
+        &-initial {
+            white-space: initial;
+        }
+
+        &-unset {
+            white-space: unset;
+        }
+    }
+
+    &--uppercase {
+        text-transform: uppercase !important;
+    }
+
+    &--ellipsis {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    &--textDecoration {
+        &-none {
+            text-decoration: none;
+        }
+
+        &-underline {
+            text-decoration: underline;
+        }
+
+        &-overline {
+            text-decoration: overline;
+        }
+
+        &-lineThrough {
+            text-decoration: line-through;
+        }
+
+        &-inherit {
+            text-decoration: inherit;
+        }
+    }
+
+    @media #{$tablet} {
+        &--h1 {
+            font-size: 2.5rem; // Уменьшаем до 40px на мобильных
+        }
+
+        &--h2 {
+            font-size: 2rem; // 32px на мобильных
+        }
+
+        &--h3 {
+            font-size: 1.75rem; // 28px на мобильных
+        }
+
+        &--h4 {
+            font-size: 1.5rem; // 24px на мобильных
+        }
+
+        &--h5 {
+            font-size: 1.25rem; // 20px на мобильных
+        }
+
+        &--p {
+            font-size: 1rem; // 16px на мобильных
+        }
+    }
+
+    @media #{$mobile} {
+        &--h1 {
+            font-size: 2rem; // 32px на мобильных
+        }
+
+        &--h2 {
+            font-size: 1.75rem; // 28px на мобильных
+        }
+
+        &--h3 {
+            font-size: 1.5rem; // 24px на мобильных
+        }
+
+        &--h4 {
+            font-size: 1.25rem; // 20px на мобильных
+        }
+
+        &--h5 {
+            font-size: 1.125rem; // 18px на мобильных
+        }
+
+        &--h6 {
+            font-size: 1rem; // 16px на мобильных
+        }
+
+        &--p {
+            font-size: 0.875rem; // 14px на мобильных
+        }
+    }
+
+}

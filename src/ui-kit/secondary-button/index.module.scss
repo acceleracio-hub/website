@@ -1,0 +1,11 @@
+@import 'src/styles/variables'; 
+
+.Secondary-button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    border: 2px solid $color-white;
+    border-radius: 24px;
+    background-color: $color-black;
+    color: $color-light-purple;
+}

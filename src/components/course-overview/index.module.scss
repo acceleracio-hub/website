@@ -1,0 +1,16 @@
+.Course-overview {
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px 20px;
+    }
+}

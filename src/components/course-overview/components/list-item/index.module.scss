@@ -1,0 +1,8 @@
+@import 'src/styles/variables'; 
+
+.List-item {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    border-top: 1px solid $color-white;
+    padding-top: 10px;
+}
