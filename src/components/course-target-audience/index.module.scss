@@ -1,0 +1,18 @@
+.Course-target-audience {
+    position: relative;
+    padding: 0 0 50px;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__list-item {
+        flex: 1 1 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,11 +1,11 @@
-import { memo } from 'react';
-import { BrowserLink } from '../../ui-kit/browser-link';
-import classnames from 'classnames/bind';
-import styles from './index.module.scss';
+import { memo } from "react";
+import { BrowserLink } from "@ui-kit/index";
+import classnames from "classnames/bind";
+import styles from "./index.module.scss";
 
 const cn = classnames.bind(styles);
 
-const BLOCK_NAME = 'Header';
+const BLOCK_NAME = "Header";
 
 export const Header = memo(
   function Header() {

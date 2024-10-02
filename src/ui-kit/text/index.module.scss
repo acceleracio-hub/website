@@ -51,6 +51,26 @@
         font-weight: 400;
     }
 
+    // Отступ
+    &--margin-bottom {
+        &-none {
+            margin-bottom: 0;
+        }
+
+        &-small {
+            margin-bottom: 10px;
+        }
+
+        &-medium {
+            margin-bottom: 20px;
+        }
+
+        &-large {
+            margin-bottom: 40px;
+        }
+    }
+
+
     // Цвет
     &--white {
         color: $color-white;

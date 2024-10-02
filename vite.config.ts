@@ -1,10 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
 import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    tsconfigPaths()],
   base: "/website/",
   build: {
     outDir: "dist",
@@ -17,9 +20,8 @@ export default defineConfig({
     port: 5173,
   },
   resolve: {
-      alias: {
-      "@": path.resolve(__dirname, "./src"),
-      ui: `${path.resolve(__dirname, "./src/ui-kit/")}`,
+    alias: {
+      "@ui-kit": path.resolve(__dirname, "./src/ui-kit"),
     },
   },
 });

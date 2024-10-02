@@ -1,15 +1,12 @@
-import { memo } from 'react';
-import classnames from 'classnames/bind';
-import girl from '../../assets/main-girl.png';
-import { SecondaryButton } from '../../ui-kit/secondary-button';
-import { LabelButton } from '../../ui-kit/label-button';
-import { PrimaryButton } from '../../ui-kit/primary-button';
-import { Text } from '../../ui-kit/text';
-import styles from './index.module.scss';
+import { memo } from "react";
+import { SecondaryButton, LabelButton, PrimaryButton, Text } from "@ui-kit/index";
+import classnames from "classnames/bind";
+import main from "../../assets/main.png";
+import styles from "./index.module.scss";
 
 const cn = classnames.bind(styles);
 
-const BLOCK_NAME = 'Course-info';
+const BLOCK_NAME = "Course-info";
 
 export const CourseInfo = memo(
   function CourseInfo() {
@@ -27,7 +24,7 @@ export const CourseInfo = memo(
             <PrimaryButton text="Записаться на курс" />
           </div>
 
-          <img className={cn(`${BLOCK_NAME}__banner-img`)} alt="Девочка смотрит в лупу" src={girl} />
+          <img className={cn(`${BLOCK_NAME}__banner-img`)} alt="Газета" src={main} />
         </div>
       </section>
     );

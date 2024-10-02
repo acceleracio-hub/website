@@ -1,21 +1,21 @@
-import { memo, RefObject } from 'react';
-import classnames from 'classnames/bind';
-import styles from './index.module.scss';
-import React from 'react';
+import { memo, RefObject } from "react";
+import classnames from "classnames/bind";
+import styles from "./index.module.scss";
+import React from "react";
 
 const cn = classnames.bind(styles);
 
 type TProps = {
   /** Цвет текста */
-  color?: 'white' | 'black' | 'light-purple' | 'purple'; 
+  color?: "white" | "black" | "light-purple" | "purple";
   /** Флаг сокращения текста с помощью многоточия */
   isEllipsis?: boolean;
   /** Флаг верхнего регистра */
   isUpperCase?: boolean;
   /** Стиль для свойства white-space */
-  whiteSpace?: 'normal' | 'nowrap' | 'pre-wrap';
+  whiteSpace?: "normal" | "nowrap" | "pre-wrap";
   /** Размер текста */
-  size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+  size?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
   /** Тип HTML-тега */
   tagType?: keyof JSX.IntrinsicElements;
   /** Сам текст */
@@ -25,27 +25,31 @@ type TProps = {
   /** Ссылка на элемент */
   textRef?: RefObject<HTMLElement>;
   /** Стиль текста (например, зачеркнутый) */
-  textDecoration?: 'none' | 'underline' | 'line-through';
+  textDecoration?: "none" | "underline" | "line-through";
+  /** Стиль текста (например, зачеркнутый) */
+  marginBottom?: "none" | "small" | "medium" | "large";
 };
 
 const TextComponent: React.FC<TProps> = ({
-  color = 'white',
+  color = "white",
   isEllipsis = false,
   isUpperCase = false,
-  whiteSpace = 'normal',
-  size = 'h4',
+  whiteSpace = "normal",
+  size = "h4",
   tagType,
   text,
   title,
   textRef,
-  textDecoration = 'none',
+  textDecoration = "none",
+  marginBottom = "none",
 }) => {
-  const className = cn('Text', {
+  const className = cn("Text", {
     [`Text--${size}`]: size,
     [`Text--${color}`]: color,
+    [`Text--margin-bottom-${marginBottom}`]: marginBottom,
     [`Text--white-space-${whiteSpace}`]: whiteSpace,
-    'Text--uppercase': isUpperCase,
-    'Text--ellipsis': isEllipsis,
+    "Text--uppercase": isUpperCase,
+    "Text--ellipsis": isEllipsis,
     [`Text--textDecoration-${textDecoration}`]: textDecoration,
   });
 
@@ -58,7 +62,7 @@ const TextComponent: React.FC<TProps> = ({
       className,
       title,
     },
-    text
+    text,
   );
 };
 

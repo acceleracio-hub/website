@@ -1,4 +1,11 @@
+@import 'src/styles/variables'; 
+
 .Course-overview {
+    background-color: $color-white;
+    padding: 50px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+
     &__header {
         margin-bottom: 40px;
     }
