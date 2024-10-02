@@ -1,0 +1,33 @@
+@import 'src/styles/variables';
+
+.List-item {
+    flex: 1 1 30%;
+    padding: 20px 100px 50px;
+    counter-increment: section;
+    position: relative;
+
+
+    &::before {
+        content: counter(section) " ";
+        position: absolute;
+        left: 0;
+        top: 30px;
+        font-size: 1.625rem;
+        line-height: 1.2;
+        font-weight: 400;
+        border: 1px solid $color-white;
+        border-radius: 20px;
+        border-radius: 50px;
+        padding: 20px 28px;
+        width: 75px;
+        height: 75px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+
+@media #{$tablet} {
+    .List-item {
+        padding: 35px 100px 50px;
+    }
+}
