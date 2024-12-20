@@ -1,20 +1,4 @@
-.Course-info {
-    position: relative;
-    text-align: center;
-    padding: 0 0 50px;
-    margin: 0 auto;
-    max-width: 1200px; /* Ориентировочная максимальная ширина */
-    margin: 0 auto;    /* Центровка блока */
-    padding: 0 20px
-
-    &__wrapper {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin-bottom: 40px;
-    }
-
+.Course-info-banner {
     &__banner {
         display: flex;
         flex-wrap: wrap;
@@ -27,6 +11,7 @@
         align-items: flex-start;
         flex-direction: column;
         justify-content: space-between;
+        gap: 40px;
         padding: 40px 0;
         max-width: 60%;
     }
@@ -43,9 +28,9 @@
         z-index: -1;
         flex-shrink: 0;
         max-width: 366px;
-        width: auto; /* Вместо 100% попробуй авто */
+        width: auto; 
         height: auto;
-        object-fit: cover; /* Может лучше подойти для изображения */
+        object-fit: cover; 
         height: auto;
     }
 }
