@@ -1,8 +1,8 @@
 import { memo } from "react";
 import classnames from "classnames/bind";
 import { Text } from "@ui-kit/index";
-import styles from "./index.module.scss";
 import { ListItem } from "./components/list-item";
+import styles from "./index.module.scss";
 
 const cn = classnames.bind(styles);
 
