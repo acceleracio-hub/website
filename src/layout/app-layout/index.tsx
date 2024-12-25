@@ -7,6 +7,7 @@ import { CourseTargetAudience } from "../../components/course-target-audience";
 import { CoreSkills } from "../../components/core-skills";
 import { CourseStructure } from "../../components/course-structure";
 import styles from "./index.module.scss";
+import { CourseSchedule } from "../../components/course-schedule";
 
 const cn = classnames.bind(styles);
 
@@ -21,6 +22,7 @@ export const AppLayout = memo(
       <CourseTargetAudience/>
       <CoreSkills/>
       <CourseStructure/>
+      <CourseSchedule />
     </div>;
   },
 );

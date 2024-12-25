@@ -1,0 +1,30 @@
+
+.Course-widget {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__content {
+        flex: 1;
+    }
+
+    &--left {
+        flex-direction: row;
+    }
+
+    &--right {
+        flex-direction: row-reverse;
+    }
+
+    &__description {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    &__title {
+        max-width: 30%;
+        height: auto;
+        object-fit: contain;
+    }
+}

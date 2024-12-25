@@ -28,6 +28,8 @@ type TProps = {
   textDecoration?: "none" | "underline" | "line-through";
   /** Стиль текста (например, зачеркнутый) */
   marginBottom?: "none" | "small" | "medium" | "large";
+  /** Выравнивание текста */
+  textAlign?: "left" | "center" | "right" | "justify";
 };
 
 const TextComponent: React.FC<TProps> = ({
@@ -42,6 +44,7 @@ const TextComponent: React.FC<TProps> = ({
   textRef,
   textDecoration = "none",
   marginBottom = "none",
+  textAlign = "left",
 }) => {
   const className = cn("Text", {
     [`Text--${size}`]: size,
@@ -51,6 +54,7 @@ const TextComponent: React.FC<TProps> = ({
     "Text--uppercase": isUpperCase,
     "Text--ellipsis": isEllipsis,
     [`Text--textDecoration-${textDecoration}`]: textDecoration,
+    [`Text--text-align-${textAlign}`]: textAlign,
   });
 
   const tagTypeOnSize = tagType || size;

@@ -1,54 +1,47 @@
 import { memo } from "react";
-import classnames from "classnames/bind";
 import { Text } from "@ui-kit/index";
-import styles from "./index.module.scss";
-
-const cn = classnames.bind(styles);
-
-const BLOCK_NAME = "Course-structure";
+import beforeTitle from "./_assets/before-title.svg";
+import inProgressTitle from "./_assets/in_progress-title.svg";
+import homeworkTitle from "./_assets/homework-title.svg";
+import { CourseWidget } from "./components/course-widget";
 
 export const CourseStructure = memo(
   function CourseStructure() {
     return <>
       <Text size='h2' color="white" text="Как устроено обучение?" marginBottom="large" />
-      <section className={cn(BLOCK_NAME)}>
-        <div className={cn(`${BLOCK_NAME}__cycle-container`)}>
-          <div className={cn(`${BLOCK_NAME}__cycle-item-flex`)}>
-            <div className={cn(`${BLOCK_NAME}__cycle-item-flex-container`)}>
-              <Text size="h4" color="black" text="Перед занятием" marginBottom="medium" />
-              <div className={cn(`${BLOCK_NAME}__cycle-item-container`)}>
-                <div className={cn(`${BLOCK_NAME}__cycle-item`)}><Text size="p" color="white" text="Составляем ответы на вопросы интервью" marginBottom="small" /></div>
-              </div>
-            </div>
-            <div className={cn(`${BLOCK_NAME}__cycle-arrow`)}>⮕</div>
-          </div>
-
-          <div className={cn(`${BLOCK_NAME}__cycle-item-flex`)}>
-
-            <div className={cn(`${BLOCK_NAME}__cycle-item-flex-container`)}>
-              <Text size="h4" color="black" text="На занятии" marginBottom="medium" />
-              <div className={cn(`${BLOCK_NAME}__cycle-item-container`)}>
-                <div className={cn(`${BLOCK_NAME}__cycle-item`)}><Text size="p" color="white" text="Разбираем теорию" marginBottom="small" /></div>
-              </div>
-            </div>
-            <div className={cn(`${BLOCK_NAME}__cycle-arrow`)}>⮕</div>
-          </div>
-
-          <div className={cn(`${BLOCK_NAME}__cycle-item-flex-container`)}>
-
-            <div className={cn(`${BLOCK_NAME}__cycle-item-flex-container`)}>
-              <Text size="h4" color="black" text="Фидбек" marginBottom="medium" />
-              <div className={cn(`${BLOCK_NAME}__cycle-item-container`)}>
-                <div className={cn(`${BLOCK_NAME}__cycle-item`)}>
-                  <Text size="p" color="white" text="Улучшаем и отрабатываем  ответ + фидбек" marginBottom="medium" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={cn(`${BLOCK_NAME}__cycle-practice`)}><Text size="p" color="purple" text="100% языковой практики" marginBottom="none" /></div>
+      <section>
+        <CourseWidget
+          titleImg={beforeTitle}
+          titleAlt="Перед занятием"
+          header="Заранее подготовите кейсы для идеального результата"
+          texts={[
+            "❓ Вы получаете вопросы по теме урока и начинаете работать над ответами.",
+            "🔍 Это помогает вам заранее структурировать мысли и подготовить кейсы, которые будут использоваться на уроке.",
+            "🚀 Мы поможем вам избежать хаотичных ответов, чтобы вы чувствовали себя уверенно и подготовлено.",
+          ]}
+        />
+        <CourseWidget
+          titleImg={inProgressTitle}
+          titleAlt="На занятии"
+          direction="right"
+          header="Научитесь структурировать ответы и доводить ваши кейсы до совершенства"
+          texts={[
+            "🧠 Полная проработка ваших навыков. Мы разберем, как правильно отвечать на вопросы интервью, используя такие проверенные фреймворки, как STAR и U-Story.",
+            "🛠️ Вместе мы анализируем ваши заготовки, разбираем их до мельчайших деталей и подсказываем, где можно сделать ответы ярче, убедительнее и профессиональнее.",
+            "🎯 После этого вы выходите с четким пониманием того, как сделать свои ответы запоминающимися.",
+          ]}
+        />
+        <CourseWidget
+          titleImg={homeworkTitle}
+          titleAlt="После занятия"
+          header="Видеоответ: закрепляете теорию и получаете фидбек для максимального прогресса"
+          texts={[
+            "📹 Вы получаете вопросы по теме урока и начинаете работать над ответами.",
+            "🗃️ Это помогает вам заранее структурировать мысли и подготовить кейсы, которые будут использоваться на уроке.",
+            "🌟 Мы поможем вам избежать хаотичных ответов, чтобы вы чувствовали себя уверенно и подготовлено.",
+          ]}
+        />
       </section>
-    </>
-      ;
+    </>;
   },
 );

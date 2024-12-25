@@ -10,16 +10,14 @@ const BLOCK_NAME = "Target-group-info";
 type TProps = {
   title: string;
   text: string;
-  src: string;
 };
 
 export const TargetGroupInfo = memo(
-  function TargetGroupInfo({ title, text, src }: TProps) {
+  function TargetGroupInfo({ title, text }: TProps) {
     return <>
-      <img className={cn(`${BLOCK_NAME}__img`)} alt={title} src={src} />
       <div className={cn(BLOCK_NAME)}>
-        <Text size='h4' text={title} marginBottom="medium" />
-        <Text size="p" text={text} />
+        <Text size='h3' text={title} marginBottom="medium" color="black" />
+        <Text size="p" text={text} color="black" />
       </div>
     </>
     ;
