@@ -176,6 +176,24 @@
         }
     }
 
+    &--word-break {
+        &-normal {
+          word-break: normal;
+        }
+    
+        &-break-word {
+          word-break: break-word;
+        }
+    
+        &-break-all {
+          word-break: break-all;
+        }
+    
+        &-keep-all {
+          word-break: keep-all;
+        }
+      }
+
     @media #{$tablet} {
         &--h1 {
             font-size: 2.5rem; // Уменьшаем до 40px на мобильных
@@ -231,5 +249,4 @@
             font-size: 0.875rem; // 14px на мобильных
         }
     }
-
 }

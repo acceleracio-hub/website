@@ -1,3 +1,5 @@
+@import 'src/styles/variables';
+
 .Course-schedule {
     display: flex;
     flex-direction: row;
@@ -9,7 +11,7 @@
         gap: 20px;
         width: 100%;
     }
-        
+
     &__row {
         display: flex;
         justify-content: center;
@@ -17,9 +19,23 @@
     }
 
     &__image {
-        max-width: 320px;
         width: auto;
-        object-fit: cover;
         height: auto;
+        max-width: 320px;
+        max-height: 100vh;
+        object-fit: contain;
+    }
+}
+
+@media #{$tablet} {
+    .Course-schedule {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &__image {
+            align-self: center;
+        }
+
     }
 }

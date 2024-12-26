@@ -19,6 +19,9 @@
     "paths": {
       "@ui-kit/*": [
         "./src/ui-kit/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
       ]
     }
   },

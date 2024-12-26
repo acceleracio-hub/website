@@ -30,6 +30,8 @@ type TProps = {
   marginBottom?: "none" | "small" | "medium" | "large";
   /** Выравнивание текста */
   textAlign?: "left" | "center" | "right" | "justify";
+  /** Поведение переноса слов */
+  wordBreak?: "normal" | "break-word" | "break-all" | "keep-all";
 };
 
 const TextComponent: React.FC<TProps> = ({
@@ -45,6 +47,7 @@ const TextComponent: React.FC<TProps> = ({
   textDecoration = "none",
   marginBottom = "none",
   textAlign = "left",
+  wordBreak = "normal",
 }) => {
   const className = cn("Text", {
     [`Text--${size}`]: size,
@@ -55,6 +58,7 @@ const TextComponent: React.FC<TProps> = ({
     "Text--ellipsis": isEllipsis,
     [`Text--textDecoration-${textDecoration}`]: textDecoration,
     [`Text--text-align-${textAlign}`]: textAlign,
+    [`Text--word-break-${wordBreak}`]: wordBreak,
   });
 
   const tagTypeOnSize = tagType || size;

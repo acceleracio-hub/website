@@ -2,6 +2,7 @@ import { memo } from "react";
 import classnames from "classnames/bind";
 import { Tile, Text } from "@ui-kit/index";
 import styles from "./index.module.scss";
+import { useDocumentBreakpoints } from "@hooks/use-document-breakpoints";
 
 const cn = classnames.bind(styles);
 
@@ -24,7 +25,8 @@ export const CourseWidget = memo(
     texts,
     direction = "left",
   }: TProps) {
-    const isLeft = direction === "left";
+    const { isDesktop } = useDocumentBreakpoints();
+    const isLeft = direction === "left" || !isDesktop;
 
     return <Tile>
       <div className={cn(BLOCK_NAME)}>

@@ -18,7 +18,7 @@ export const CourseInfoBanner = memo(
           <PrimaryButton text="Записаться на курс" />
         </div>
 
-        <img className={cn(`${BLOCK_NAME}__banner-img`)} alt="Газета" src={main} />
+        <img className={cn(`${BLOCK_NAME}__banner-image`)} alt="Газета" src={main} />
       </div>
     );
   },

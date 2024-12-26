@@ -1,3 +1,4 @@
+@import 'src/styles/variables';
 
 .Course-widget {
     display: flex;
@@ -26,5 +27,20 @@
         max-width: 30%;
         height: auto;
         object-fit: contain;
+    }
+}
+
+@media #{$tablet} {
+    .Course-widget {
+        &__description {
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        &__title {
+            max-width: 50%;
+            align-self: center;
+        }
+
     }
 }

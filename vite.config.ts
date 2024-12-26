@@ -22,6 +22,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@ui-kit": path.resolve(__dirname, "./src/ui-kit"),
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
     },
   },
 });
