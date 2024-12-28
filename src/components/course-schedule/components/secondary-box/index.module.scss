@@ -7,4 +7,10 @@
     padding: 15px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
+    cursor: default;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+       opacity: 0.8;
+    }
 }
