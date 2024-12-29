@@ -9,6 +9,7 @@ import { CourseStructure } from "../../components/course-structure";
 import { CourseSchedule } from "../../components/course-schedule";
 import { CourseProgram } from "../../components/course-program";
 import { Authors } from "../../components/authors";
+import { Feedbacks } from "../../components/feedbacks";
 import styles from "./index.module.scss";
 
 const cn = classnames.bind(styles);
@@ -27,6 +28,7 @@ export const AppLayout = memo(function AppLayout() {
       <CourseSchedule />
       <CourseProgram />
       <Authors />
+      <Feedbacks />
     </div>
   );
 });

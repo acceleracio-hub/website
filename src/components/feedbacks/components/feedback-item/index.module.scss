@@ -1,0 +1,33 @@
+@import "src/styles/variables";
+
+.Feedback-item {
+  &__info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    max-width: 55px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 30px;
+  }
+
+  &__description {
+    font-size: 1rem;
+    font-style: italic;
+    border-left: 4px solid $color-black;
+    padding-left: 16px;
+    margin: 0;
+  }
+
+  &__description::before {
+    content: none;
+  }
+
+  &__description::after {
+    content: none;
+  }
+}
