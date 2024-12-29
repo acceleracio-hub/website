@@ -1,10 +1,10 @@
 import { memo, useState } from "react";
 import { Text, Tile } from "@ui-kit/index";
 import classnames from "classnames/bind";
-import styles from "./index.module.scss";
 import { LESSONS } from "./constants";
 import { LessonHeader } from "./components/lesson-header";
 import { LessonDetails } from "./components/lesson-details";
+import styles from "./index.module.scss";
 
 const cn = classnames.bind(styles);
 

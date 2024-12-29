@@ -8,6 +8,7 @@ import { CoreSkills } from "../../components/core-skills";
 import { CourseStructure } from "../../components/course-structure";
 import { CourseSchedule } from "../../components/course-schedule";
 import { CourseProgram } from "../../components/course-program";
+import { Authors } from "../../components/authors";
 import styles from "./index.module.scss";
 
 const cn = classnames.bind(styles);
@@ -25,6 +26,7 @@ export const AppLayout = memo(function AppLayout() {
       <CourseStructure />
       <CourseSchedule />
       <CourseProgram />
+      <Authors />
     </div>
   );
 });

@@ -1,8 +1,8 @@
 import { memo } from "react";
 import { Text } from "@ui-kit/index";
-import beforeTitle from "./_assets/before-title.svg";
-import inProgressTitle from "./_assets/in_progress-title.svg";
-import homeworkTitle from "./_assets/homework-title.svg";
+import beforeTitle from "./assets/before-title.svg";
+import inProgressTitle from "./assets/in_progress-title.svg";
+import homeworkTitle from "./assets/homework-title.svg";
 import { CourseWidget } from "./components/course-widget";
 
 export const CourseStructure = memo(function CourseStructure() {
