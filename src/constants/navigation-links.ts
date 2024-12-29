@@ -5,4 +5,3 @@ export const NAVIGATION_LINKS = {
   ABOUT_US: "#about-us",
   REVIEWS: "#reviews",
 };
-

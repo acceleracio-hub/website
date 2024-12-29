@@ -1,16 +1,16 @@
-@import 'src/styles/variables';
+@import "src/styles/variables";
 
 .Primary-button {
-        float: inline-start;
-        background-color: $color-white;
-        border-radius: 24px;
-        color: $color-black;
-        transition: all .3s ease;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 1.25;
+  float: inline-start;
+  background-color: $color-white;
+  border-radius: 24px;
+  color: $color-black;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.25;
 
-    &:hover {
-        opacity: 0.5;
-    }
+  &:hover {
+    opacity: 0.5;
+  }
 }

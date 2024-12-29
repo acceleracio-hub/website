@@ -11,12 +11,12 @@ type TProps = {
   onClick?: VoidFunction;
 };
 
-export const PrimaryButton = memo(
-  function PrimaryButton({ text, onClick }: TProps) {
-    if (!text) return null;
+export const PrimaryButton = memo(function PrimaryButton({ text, onClick }: TProps) {
+  if (!text) return null;
 
-    return <button className={cn(BLOCK_NAME)} onClick={onClick}>
+  return (
+    <button className={cn(BLOCK_NAME)} onClick={onClick}>
       {text}
-    </button>;
-  },
-);
+    </button>
+  );
+});

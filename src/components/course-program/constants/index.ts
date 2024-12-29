@@ -70,9 +70,7 @@ export const LESSONS: Array<TLesson> = [
   {
     title: "Mock Interview",
     details: {
-      whatLearn: [
-        "Проведем пробное собеседование по всем вопросам курса",
-      ],
+      whatLearn: ["Проведем пробное собеседование по всем вопросам курса"],
     },
   },
 ];

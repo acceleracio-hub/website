@@ -1,26 +1,25 @@
-@import 'src/styles/variables';
+@import "src/styles/variables";
 
 .Target-group-info {
-    border-top: 1px solid $color-black;
-    padding-top: 10px;
+  border-top: 1px solid $color-black;
+  padding-top: 10px;
 
-
-    &__img {
-        align-self: center;
-        padding: 20px;
-        max-height: 300px;
-        height: 100%;
-        width: fit-content;
-        object-fit: contain;
-    }
+  &__img {
+    align-self: center;
+    padding: 20px;
+    max-height: 300px;
+    height: 100%;
+    width: fit-content;
+    object-fit: contain;
+  }
 }
 
 @media #{$tablet} {
-    .Target-group-info {
-        &__img {
-            padding: 0;
-            height: fit-content;
-            width: 80dvw;
-        }
+  .Target-group-info {
+    &__img {
+      padding: 0;
+      height: fit-content;
+      width: 80dvw;
     }
+  }
 }

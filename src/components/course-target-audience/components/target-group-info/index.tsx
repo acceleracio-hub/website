@@ -13,16 +13,21 @@ type TProps = {
   text: string;
 };
 
-export const TargetGroupInfo = memo(
-  function TargetGroupInfo({ title, text }: TProps) {
-    const { isDesktop } = useDocumentBreakpoints();
+export const TargetGroupInfo = memo(function TargetGroupInfo({ title, text }: TProps) {
+  const { isDesktop } = useDocumentBreakpoints();
 
-    return <>
+  return (
+    <>
       <div className={cn(BLOCK_NAME)}>
-        <Text size='h3' text={title} marginBottom="medium" color="black" wordBreak={isDesktop ? "normal" : "break-word"}/>
+        <Text
+          size="h3"
+          text={title}
+          marginBottom="medium"
+          color="black"
+          wordBreak={isDesktop ? "normal" : "break-word"}
+        />
         <Text size="p" text={text} color="black" />
       </div>
     </>
-    ;
-  },
-);
+  );
+});

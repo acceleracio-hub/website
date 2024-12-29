@@ -11,10 +11,10 @@ type TProps = {
   text: string;
 };
 
-export const ListItem = memo(
-  function ListItem({ text }: TProps) {
-    return <li className={cn(BLOCK_NAME)}>
-      <Text size='h4' color="black" tagType="p" text={text} />
-    </li>;
-  },
-);
+export const ListItem = memo(function ListItem({ text }: TProps) {
+  return (
+    <li className={cn(BLOCK_NAME)}>
+      <Text size="h4" color="black" tagType="p" text={text} />
+    </li>
+  );
+});

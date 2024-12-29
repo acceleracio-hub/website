@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 
 export function useDocumentBreakpoints() {
-  const [windowWidth, setWindowWidth] = useState(() =>
-    typeof window !== "undefined" ? window.innerWidth : 0,
-  );
+  const [windowWidth, setWindowWidth] = useState(() => (typeof window !== "undefined" ? window.innerWidth : 0));
 
   useEffect(() => {
     if (typeof window === "undefined") {

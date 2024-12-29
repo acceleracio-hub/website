@@ -1,45 +1,43 @@
-@import 'src/styles/variables';
+@import "src/styles/variables";
 
 .Lesson-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $color-black;
+
+    * {
+      color: $color-white;
+    }
+  }
+
+  &--active {
+    background-color: $color-black;
 
     &:hover {
-        background-color: $color-black;
-
-        * {
-            color: $color-white;
-        }
-
+      background-color: darken($color-black, 10%);
     }
+  }
 
-    &--active {
-        background-color: $color-black;
-
-        &:hover {
-            background-color: darken($color-black, 10%);
-        }
-    }
-
-    &__title {
-        flex-grow: 1;
-        margin-left: 20px;
-    }
+  &__title {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
 }
 
-
 @media #{$tablet} {
-    .Lesson-header {
-        flex-direction: column;
-        align-items: flex-start;
+  .Lesson-header {
+    flex-direction: column;
+    align-items: flex-start;
 
-        &__title {
-            flex-grow: 1;
-            margin-left: 0;
-        }
+    &__title {
+      flex-grow: 1;
+      margin-left: 0;
     }
+  }
 }

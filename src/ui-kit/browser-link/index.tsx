@@ -14,10 +14,12 @@ type TProps = {
   text: string;
 };
 
-export const BrowserLink = memo(
-  function BrowserLink({ routeName, text }: TProps) {
-    return <div className={cn(BLOCK_NAME)}>
-      <Link to={routeName} offset={-130} smooth={true} duration={500}>{text}</Link>
-    </div>;
-  },
-);
+export const BrowserLink = memo(function BrowserLink({ routeName, text }: TProps) {
+  return (
+    <div className={cn(BLOCK_NAME)}>
+      <Link to={routeName} offset={-130} smooth={true} duration={500}>
+        {text}
+      </Link>
+    </div>
+  );
+});

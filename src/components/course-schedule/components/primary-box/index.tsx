@@ -6,8 +6,6 @@ const cn = classnames.bind(styles);
 
 const BLOCK_NAME = "Primary-box";
 
-export const PrimaryBox = memo(
-  function PrimaryBox({ children }: PropsWithChildren) {
-    return <div className={cn(BLOCK_NAME)}>{children}</div>;
-  },
-);
+export const PrimaryBox = memo(function PrimaryBox({ children }: PropsWithChildren) {
+  return <div className={cn(BLOCK_NAME)}>{children}</div>;
+});

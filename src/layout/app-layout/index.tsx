@@ -14,17 +14,17 @@ const cn = classnames.bind(styles);
 
 const BLOCK_NAME = "App-layout";
 
-export const AppLayout = memo(
-  function AppLayout() {
-    return <div className={cn(BLOCK_NAME)}>
+export const AppLayout = memo(function AppLayout() {
+  return (
+    <div className={cn(BLOCK_NAME)}>
       <Header />
       <CourseInfo />
       <CourseOverview />
-      <CourseTargetAudience/>
-      <CoreSkills/>
-      <CourseStructure/>
+      <CourseTargetAudience />
+      <CoreSkills />
+      <CourseStructure />
       <CourseSchedule />
       <CourseProgram />
-    </div>;
-  },
-);
+    </div>
+  );
+});

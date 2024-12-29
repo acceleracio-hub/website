@@ -10,10 +10,10 @@ const cn = classnames.bind(styles);
 
 const BLOCK_NAME = "Course-schedule";
 
-export const CourseSchedule = memo(
-  function CourseSchedule() {
-    return <>
-      <Text size='h2' color="white" text="Организация курса" marginBottom="large" />
+export const CourseSchedule = memo(function CourseSchedule() {
+  return (
+    <>
+      <Text size="h2" color="white" text="Организация курса" marginBottom="large" />
       <section>
         <Tile>
           <div className={cn(BLOCK_NAME)}>
@@ -41,6 +41,6 @@ export const CourseSchedule = memo(
           </div>
         </Tile>
       </section>
-    </>;
-  },
-);
+    </>
+  );
+});

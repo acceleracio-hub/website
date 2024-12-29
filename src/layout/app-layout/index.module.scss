@@ -1,15 +1,14 @@
-@import 'src/styles/variables';
+@import "src/styles/variables";
 
 .App-layout {
-    width: 90%;
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding-top: 100px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
-
 @media #{$tablet} {
-    .App-layout {
-        padding-top: 140px;
-    }
+  .App-layout {
+    padding-top: 140px;
+  }
 }

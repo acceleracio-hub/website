@@ -1,12 +1,12 @@
-@import 'src/styles/variables';
+@import "src/styles/variables";
 
 .Course-overview {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 60px 20px;
-    }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 20px;
+  }
 }

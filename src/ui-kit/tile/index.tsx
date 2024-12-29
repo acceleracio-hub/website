@@ -6,8 +6,6 @@ const cn = classnames.bind(styles);
 
 const BLOCK_NAME = "Tile";
 
-export const Tile = memo(
-  function Tile({ children }: PropsWithChildren) {
-    return <div className={cn(BLOCK_NAME)}>{children}</div>;
-  },
-);
+export const Tile = memo(function Tile({ children }: PropsWithChildren) {
+  return <div className={cn(BLOCK_NAME)}>{children}</div>;
+});

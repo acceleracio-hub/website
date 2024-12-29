@@ -1,41 +1,41 @@
-@import 'src/styles/variables';
+@import "src/styles/variables";
 
 .Header {
-    position: fixed;
-    top: 0;
-    left: 0; 
-    right: 0; 
-    z-index: 1;
-    background-color: $color-black;
-    width: 90%; 
-    margin: 0 auto; 
-    max-width: 1200px; 
-    box-sizing: border-box;
-    padding: 0px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: $color-black;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 0px 30px;
 
-    &__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        width: 100%;
-        padding: 20px 0;
-        flex-wrap: wrap;
-    }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
 
-    &__logo {
-        font-size: 24px;
-        font-weight: bold;
-    }
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
 
-    &__nav {
-        display: flex;
-        align-items: center;
-    }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
 
-    &__ul {
-        display: flex;
-        gap: clamp(10px, 5vw, 80px);
-        flex-wrap: wrap;
-    }
+  &__ul {
+    display: flex;
+    gap: clamp(10px, 5vw, 80px);
+    flex-wrap: wrap;
+  }
 }

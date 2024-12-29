@@ -1,31 +1,31 @@
 .Course-info-banner {
-    &__banner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 20px 0;
-    }
+  &__banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
 
-    &__banner-text {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 40px;
-        padding: 40px 0;
-        max-width: 60%;
-    }
+  &__banner-text {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+    max-width: 60%;
+  }
 
-    &__banner-image {
-        align-self: center;
-        flex-shrink: 0;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        width: 100%;
-        height: auto;
-        max-width: 366px;
-        max-height: 100vh;
-        object-fit: contain;
-    }
+  &__banner-image {
+    align-self: center;
+    flex-shrink: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    max-width: 366px;
+    max-height: 100vh;
+    object-fit: contain;
+  }
 }

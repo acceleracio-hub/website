@@ -1,9 +1,7 @@
 import { AppLayout } from "./layout/app-layout";
 
 function App() {
-  return (
-    <AppLayout />
-  );
+  return <AppLayout />;
 }
 
 export default App;

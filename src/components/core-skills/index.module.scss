@@ -1,22 +1,21 @@
-@import 'src/styles/variables';
+@import "src/styles/variables";
 
 .Core-skills {
-    &__list {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        list-style-type: none;
-        counter-reset: section;
-        margin: 0;
-        padding: 0;
-    }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    counter-reset: section;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-
 @media #{$tablet} {
-    .Core-skills {
-        &__list-item {
-            padding: 35px 100px 50px;
-        }
+  .Core-skills {
+    &__list-item {
+      padding: 35px 100px 50px;
     }
+  }
 }

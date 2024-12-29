@@ -8,25 +8,27 @@ const cn = classnames.bind(styles);
 
 const BLOCK_NAME = "Course-target-audience";
 
-export const CourseTargetAudience = memo(
-  function CourseTargetAudience() {
-    return <section className={cn(BLOCK_NAME)}>
-      <Text size='h2' text="Кому подойдет курс?" marginBottom="medium" />
+export const CourseTargetAudience = memo(function CourseTargetAudience() {
+  return (
+    <section className={cn(BLOCK_NAME)}>
+      <Text size="h2" text="Кому подойдет курс?" marginBottom="medium" />
       <Tile>
         <ul className={cn(`${BLOCK_NAME}__list`)}>
           <li className={cn(`${BLOCK_NAME}__list-item`)}>
             <TargetGroupInfo
               title="IT-специалисты"
-              text="Подходит для разработчиков, DevOps'ов, тестировщиков, аналитиков, продактов и&nbsp;других диджитал-специалистов" />
+              text="Подходит для разработчиков, DevOps'ов, тестировщиков, аналитиков, продактов и&nbsp;других диджитал-специалистов"
+            />
           </li>
 
           <li className={cn(`${BLOCK_NAME}__list-item`)}>
             <TargetGroupInfo
               title="Высококвалифицированные специалисты других профессий"
-              text="Если вы стремитесь работать за границей или&nbsp;в&nbsp;международных компаниях" />
+              text="Если вы стремитесь работать за границей или&nbsp;в&nbsp;международных компаниях"
+            />
           </li>
         </ul>
       </Tile>
-    </section>;
-  },
-);
+    </section>
+  );
+});

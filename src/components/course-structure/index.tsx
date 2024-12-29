@@ -5,10 +5,10 @@ import inProgressTitle from "./_assets/in_progress-title.svg";
 import homeworkTitle from "./_assets/homework-title.svg";
 import { CourseWidget } from "./components/course-widget";
 
-export const CourseStructure = memo(
-  function CourseStructure() {
-    return <>
-      <Text size='h2' color="white" text="Как устроено обучение?" marginBottom="large" />
+export const CourseStructure = memo(function CourseStructure() {
+  return (
+    <>
+      <Text size="h2" color="white" text="Как устроено обучение?" marginBottom="large" />
       <section>
         <CourseWidget
           titleImg={beforeTitle}
@@ -42,6 +42,6 @@ export const CourseStructure = memo(
           ]}
         />
       </section>
-    </>;
-  },
-);
+    </>
+  );
+});

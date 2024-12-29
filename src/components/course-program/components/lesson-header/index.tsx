@@ -14,9 +14,9 @@ type TProps = {
   onClick: VoidFunction;
 };
 
-export const LessonHeader = memo(
-  function LessonHeader({ title, index, isActive, onClick }: TProps) {
-    return <div
+export const LessonHeader = memo(function LessonHeader({ title, index, isActive, onClick }: TProps) {
+  return (
+    <div
       className={cn(BLOCK_NAME, {
         [`${BLOCK_NAME}--active`]: isActive,
       })}
@@ -31,6 +31,6 @@ export const LessonHeader = memo(
       <span className={cn(`${BLOCK_NAME}__title`)}>
         <Text size="h4" tagType="span" color={isActive ? "white" : "black"} text={title} marginBottom="small" />
       </span>
-    </div>;
-  },
-);
+    </div>
+  );
+});

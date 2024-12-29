@@ -6,8 +6,6 @@ const cn = classnames.bind(styles);
 
 const BLOCK_NAME = "Secondary-box";
 
-export const SecondaryBox = memo(
-  function SecondaryBox({ children }: PropsWithChildren) {
-    return <div className={cn(BLOCK_NAME)}>{children}</div>;
-  },
-);
+export const SecondaryBox = memo(function SecondaryBox({ children }: PropsWithChildren) {
+  return <div className={cn(BLOCK_NAME)}>{children}</div>;
+});

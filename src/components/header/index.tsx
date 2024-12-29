@@ -8,33 +8,31 @@ const cn = classnames.bind(styles);
 
 const BLOCK_NAME = "Header";
 
-export const Header = memo(
-  function Header() {
-    return (
-      <header className={cn(BLOCK_NAME)}>
-        <div className={cn(`${BLOCK_NAME}__content`)}>
-          <div className={cn(`${BLOCK_NAME}__logo`)}>Acceleracio ✨</div>
-          <nav className={cn(`${BLOCK_NAME}__nav`)}>
-            <ul className={cn(`${BLOCK_NAME}__ul`)}>
-              <li>
-                <BrowserLink routeName={NAVIGATION_LINKS.ABOUT_COURSE} text="О курсе" />
-              </li>
-              <li>
-                <BrowserLink routeName={NAVIGATION_LINKS.TEACHERS} text="Преподаватели" />
-              </li>
-              <li>
-                <BrowserLink routeName={NAVIGATION_LINKS.PROGRAM} text="Программа" />
-              </li>
-              <li>
-                <BrowserLink routeName={NAVIGATION_LINKS.ABOUT_US} text="О нас" />
-              </li>
-              <li>
-                <BrowserLink routeName={NAVIGATION_LINKS.REVIEWS} text="Отзывы" />
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    );
-  },
-);
+export const Header = memo(function Header() {
+  return (
+    <header className={cn(BLOCK_NAME)}>
+      <div className={cn(`${BLOCK_NAME}__content`)}>
+        <div className={cn(`${BLOCK_NAME}__logo`)}>Acceleracio ✨</div>
+        <nav className={cn(`${BLOCK_NAME}__nav`)}>
+          <ul className={cn(`${BLOCK_NAME}__ul`)}>
+            <li>
+              <BrowserLink routeName={NAVIGATION_LINKS.ABOUT_COURSE} text="О курсе" />
+            </li>
+            <li>
+              <BrowserLink routeName={NAVIGATION_LINKS.TEACHERS} text="Преподаватели" />
+            </li>
+            <li>
+              <BrowserLink routeName={NAVIGATION_LINKS.PROGRAM} text="Программа" />
+            </li>
+            <li>
+              <BrowserLink routeName={NAVIGATION_LINKS.ABOUT_US} text="О нас" />
+            </li>
+            <li>
+              <BrowserLink routeName={NAVIGATION_LINKS.REVIEWS} text="Отзывы" />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+});

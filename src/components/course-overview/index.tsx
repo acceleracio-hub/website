@@ -9,11 +9,11 @@ const cn = classnames.bind(styles);
 
 const BLOCK_NAME = "Course-overview";
 
-export const CourseOverview = memo(
-  function CourseOverview() {
-    return  <section id={NAVIGATION_LINKS.ABOUT_COURSE}>
+export const CourseOverview = memo(function CourseOverview() {
+  return (
+    <section id={NAVIGATION_LINKS.ABOUT_COURSE}>
       <Tile>
-        <Text size='h2' color="black" text="Главное о&nbsp;курсе" marginBottom="medium" />
+        <Text size="h2" color="black" text="Главное о&nbsp;курсе" marginBottom="medium" />
         <div className={cn(BLOCK_NAME)}>
           <ul className={cn(`${BLOCK_NAME}__list`)}>
             <ListItem text="💣 7 live-занятий: отработай все ответы в контакте с преподавателем и участниками группы" />
@@ -25,6 +25,6 @@ export const CourseOverview = memo(
           </ul>
         </div>
       </Tile>
-    </section>;
-  },
-);
+    </section>
+  );
+});

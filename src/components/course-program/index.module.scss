@@ -1,15 +1,15 @@
-@import 'src/styles/variables';
+@import "src/styles/variables";
 
 .Course-program {
-    border: 1px solid $color-black;
-    border-radius: 8px;
-    overflow: hidden;
+  border: 1px solid $color-black;
+  border-radius: 8px;
+  overflow: hidden;
 
-    &__lesson {
-        border-bottom: 1px solid $color-black;
+  &__lesson {
+    border-bottom: 1px solid $color-black;
 
-        &:last-child {
-            border-bottom: none;
-        }
+    &:last-child {
+      border-bottom: none;
     }
+  }
 }

@@ -1,16 +1,16 @@
-@import 'src/styles/variables'; 
+@import "src/styles/variables";
 
 .Primary-box {
-    box-sizing: border-box;
-    background-color: white;
-    border-radius: 12px;
-    padding: 15px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    cursor: default;
-    transition: 0.5s ease-in-out;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  cursor: default;
+  transition: 0.5s ease-in-out;
 
-    &:hover {
-        background-color: #e8e8e8;
-    }
+  &:hover {
+    background-color: #e8e8e8;
+  }
 }
